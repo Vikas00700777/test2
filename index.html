@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Code Reviewer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="icon">🤖</div>
+    <h1>AI <span>Code</span> Reviewer</h1>
+  </header>
+
+  <div class="editor-wrap">
+    <div class="editor-label">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      input
+    </div>
+    <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+  </div>
+
+  <button id="reviewBtn">Review Code →</button>
+
+  <div class="output-wrap" id="outputWrap">
+    <div class="output-label">
+      output
+      <span class="status-dot" id="statusDot"></span>
+    </div>
+    <pre id="output">Waiting for review...</pre>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
